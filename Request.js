@@ -16,8 +16,8 @@ var request = function(choice, time) {
    confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
   }
   if (time === 3) {
-   Confirm("All of the choices has run out, if you want to do this again, please re-run.");
-    done == false;
+   confirm("All of the choices has run out, if you want to do this again, please re-run.");
+    done = false;
   }
   time++;
   }
