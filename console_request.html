@@ -9,13 +9,14 @@ var time = 0;
 while(done) {
 	//choices
 	var choice = prompt("What do you like(anime, Computer Games... choices still in progress");
+	choice = choice.toString();
 	//types 
 	var type = null;
 	//function requst 
 	var request = function(choice, time) {
 		//anime 
 		if (choice == "anime") {
-			window.location.replace("Free Anime on this Website, http://kissanime.to/");
+			confirm("Free Anime on this Website, http://kissanime.to/");
 		}
 		//games
 		if (choice == "Computer Games") {
