@@ -36,13 +36,13 @@ while(done) {
 				confirm("You quit the branch.");
 				done = false;
 				break;
+				default:
+				confirm("This choice is'nt valid, please try again.");
+				break;
 		if (time >= 3) {
 			confirm("All of the choices has run out, if you want to do this again, please re-run.");
 			done = false;
 		}
-				default:
-				confirm("This choice is'nt valid, please try again.");
-				break;
 				
 	}
 	request(choice, time);
