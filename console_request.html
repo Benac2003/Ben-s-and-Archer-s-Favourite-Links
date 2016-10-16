@@ -8,7 +8,7 @@ var done = true;
 var time = 0;
 while(done) {
 	//choices
-	var choice = prompt("What do you like(anime, Computer Games... choices still in progress");
+	var choice = prompt("What do you like(anime, Computer Games... choices still in progress or you type cancel to cancel the branch");
 	choice = choice.toString();
 	//types 
 	var type = null;
@@ -18,7 +18,7 @@ while(done) {
 		if (choice == "anime") {
 			confirm("Free Anime on this Website, http://kissanime.to/");
 			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
-			if (Redirect == "yes") {
+			if (Redirect == "yes" || Redirect == "Yes") {
 			window.location.replace("http://kissanime.to/");
 			}
 		}
@@ -26,11 +26,11 @@ while(done) {
 		if (choice == "Computer Games") {
 			confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
 			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
-			if (Redirect == "yes") {
+			if (Redirect == "yes"|| Redirect == "Yes") {
 			window.location.replace("http://www.emuparadise.me/");
 			}
 		}
-		if (time >= 3) {
+		if (time >= 3 || "cancel") {
 			confirm("All of the choices has run out, if you want to do this again, please re-run.");
 			done = false;
 		}
