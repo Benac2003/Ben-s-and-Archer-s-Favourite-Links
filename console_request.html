@@ -16,7 +16,7 @@ while(done) {
 	var request = function(choice, time) {
 		switch (choice) {
 		//anime 
-			case "anime":
+			case 'anime':
 			confirm("Free Anime on this Website, http://kissanime.to/");
 			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
 			if (Redirect == "yes" || Redirect == "Yes") {
@@ -25,19 +25,22 @@ while(done) {
 				break;
 		
 		//games
-			case "Computeer Games":
+			case 'Computeer Games':
 			confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
 			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
 			if (Redirect == "yes"|| Redirect == "Yes") {
 			window.location.replace("http://www.emuparadise.me/");
 			}
 		break;
-			case "Cancel":
+			case 'Cancel':
 				confirm("You quit the branch.");
 				done = false;
 				break;
 				default:
 				confirm("This choice is'nt valid, please try again.");
+				break;
+			default:
+				confirm("You quit the branch");
 				break;
 		if (time >= 3) {
 			confirm("All of the choices has run out, if you want to do this again, please re-run.");
