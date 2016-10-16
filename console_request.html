@@ -46,11 +46,11 @@ while(done) {
 			default:
 				confirm("This choice is'nt valid, please try again.");
 				break;
-
+		}
 		if (time >= 3) {
 			confirm("All of the choices have run out, if you want to do this again, please re-run.");
 			done = false;
-		}
+		
 	}
 	request(choice, time);
 	time++;
