@@ -4,11 +4,6 @@
 	<head>
 		<title>Ben and Archer's Favourite Links</title>
 		<meta charset="uft-8">
-		<script type="text/javascript">
-			function = goToRequest() {
-				window.location.assign("console_request.html");
-			}
-		</script>
 	</head>
 	<body>
 		<div id="header">
@@ -22,7 +17,9 @@
 		</div>
 		<div id="interactivePage" class="main">
 			<h4>The button below will take you to our interactive branch. Try it out!</h4>
-			<button onclick="goToRequest" id="goToButton">Go there!</button>
+			<a href="console_request.html">
+				<button onclick="goToRequest" id="goToButton">Go there!</button>
+			</a>
 		</div>
 	</body>
 </html>
