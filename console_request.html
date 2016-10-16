@@ -17,12 +17,18 @@ while(done) {
 		//anime 
 		if (choice == "anime") {
 			confirm("Free Anime on this Website, http://kissanime.to/");
+			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
+			if (Redirect == "yes") {
 			window.location.replace("http://kissanime.to/");
+			}
 		}
 		//games
 		if (choice == "Computer Games") {
 			confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
+			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
+			if (Redirect == "yes") {
 			window.location.replace("http://www.emuparadise.me/");
+			}
 		}
 		if (time >= 3) {
 			confirm("All of the choices has run out, if you want to do this again, please re-run.");
