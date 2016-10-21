@@ -11,47 +11,66 @@
 			<button>Go back</button>
 		</a>
 		<script type="text/javascript">
+//done variable
 var done = true;
-var time = 0;
-while(done) {
-	//choices
-	var choice = prompt("What do you like","(Type Here) anime, Computer Games or you type cancel to cancel the branch");
-	//types 
-	var type = null;
-	//function requst
-	var request = function(choice, time) {
-		switch (choice) {
-		//anime 
-			case "anime":
-				confirm("Free Anime on this Website, http://kissanime.to/");
-				var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
-				if (Redirect == "yes" || Redirect == "Yes") {
-				window.location.replace("http://kissanime.to/"); }
-				break;
-		
-		//games
-			case "Computer Games":
-				confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
-				var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
-				if (Redirect == "yes"|| Redirect == "Yes") {
-				window.location.replace("http://www.emuparadise.me/"); }
-				break;
 
-			case "Cancel":
-				confirm("You quit the branch.");
-				done = false;
+//time variable
+var time = 0;
+
+//while-loop
+while(done) {
+//choice promot
+	var choice = prompt("What do you like?","(Type Here) anime, Computer Games or you type cancel to cancel the branch");
+//type
+	var type = null;
+	
+	//function request
+	var request = function(choice, time) {
+	//switch choice
+	switch(choice) {
+		//anime
+		case 'anime':
+			confirm("Free Anime on this Website, http://kissanime.to/");
+			//Redirect variable
+			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
+			//Redirect if statement
+			if (Redirect == "yes" || Redirect == "Yes") {
+				window.location.replace("http://kissanime.to/");
+				}
 				break;
 				
-			default:
-				confirm("This choice is'nt valid, please try again.");
+			//games
+		case 'Computer Games':
+			confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
+			//Redirect variable
+			var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
+			//Redirect if statement
+			if (Redirect == "yes"|| Redirect == "Yes") {
+				window.location.replace("http://www.emuparadise.me/");
+				}
 				break;
+		//Cancel
+		case 'Cancel':
+			confirm("You quit the branch.");
+			//done assign
+			done = false;
+			break;
+				
+			//Default
+		default:
+			confirm("This choice is'nt valid, please try again.");
+			break;
 		}
+	//run out of choice time
 		if (time >= 3) {
 			confirm("All of the choices have run out, if you want to do this again, please re-run.");
+			//done assign
 			done = false;
-		
 	}
+	//request function run
 	request(choice, time);
+	
+	//time add
 	time++;
 }
 }
