@@ -21,11 +21,13 @@ var type = null;
 while (done) {
           //choice promot
     var choice = prompt('What do you like?', '(Type Here) anime, Computer Games or you type cancel to cancel the branch');
-       //switch choice
+	//switch choice
     switch (choice) {
                 //anime
     case 'anime':
-        confirm("Free Anime on this Website, http://kissanime.to/");
+        confirm("Free Anime on this Website, http://kissanime.to
+       //time add
+        time ++;
                          //Redirect variable
         var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
                         //Redirect if statement
@@ -36,6 +38,8 @@ while (done) {
                  //game
     case 'Computer Games':
         confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
+		           //time add
+        time ++;
                         //Redirect variable
         var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
         //Redirect if statement
@@ -59,8 +63,6 @@ while (done) {
         confirm("All of the choices have run out, if you want to do this again, please re-run.");
         //done assign
         done = false;
-       //time add
-        time ++;
     }
 }
 		</script>
