@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled">
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+		<meta charset='utf-8'>
+
+		
+
+	</head>
+	<body>
+		<a href="index.html">
+			<button>Go back</button>
+		</a>
+		<script type="text/javascript">
+//done variable
+var done = true;
+//time variable
+var time = 0;
+//type
+var type = null;
+//while-loop
+while (done) {
+          //choice promot
+    var choice = prompt('What do you like?', '(Type Here) anime, Computer Games or you type cancel to cancel the branch');
+	//switch choice
+    switch (choice) {
+                //anime
+    case 'anime' || 'Anime':
+        confirm("Free Anime on this Website, http://kissanime.to/");
+       //time add
+        time ++;
+                         //Redirect variable
+        var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
+                        //Redirect if statement
+        if (Redirect === "yes" || Redirect === "Yes") {
+            window.location.replace("http://kissanime.to/");
+        }
+        break;
+                 //game
+    case 'Computer Games' || 'computer games':
+        confirm("Free old Games on this Website, http://www.emuparadise.me/ and Download Program at ...(Website Here)");
+		           //time add
+        time ++;
+                        //Redirect variable
+        var Redirect = prompt("Do you wan't to go to the website? (Yes/No)");
+        //Redirect if statement
+        if (Redirect === "yes" || Redirect === "Yes") {
+            window.location.replace("http://www.emuparadise.me/");
+        }
+        break;
+       //Cancel
+    case 'Cancel' || 'cancel':
+        confirm("You quit the branch.");
+         //done assign
+        done = false;
+        break;
+         //Default
+    default:
+        confirm("This choice is'nt valid, please try again.");
+        break;
+    }
+        //run out of choice time
+    if (time >= 3) {
+        confirm("All of the choices have run out, if you want to do this again, please re-run.");
+        //done assign
+        done = false;
+    }
+}
+		</script>
+	</body>
+
+</html>
